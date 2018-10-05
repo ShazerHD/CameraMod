@@ -20,10 +20,4 @@ public class Alexa65 extends ItemBlock
         super(block);
     }
 
-    @Override
-    public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn)
-    {
-        Minecraft.getMinecraft().displayGuiScreen(new CameraGui());
-        return null;
-    }
 }

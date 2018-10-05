@@ -1,8 +1,12 @@
 package au.com.shaunfulham.cameramod;
 
+import au.com.shaunfulham.cameramod.blocks.ArriAlexa65;
+import au.com.shaunfulham.cameramod.init.ModBlocks;
 import au.com.shaunfulham.cameramod.proxy.CommonProxy;
 import net.minecraft.block.Block;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -16,7 +20,12 @@ import net.minecraftforge.event.RegistryEvent;
 public class Cameramod
 {
 
-
+    public static CreativeTabs camera_tab = new CreativeTabs("Camera Mod") {
+        @Override
+        public ItemStack getTabIconItem() {
+            return new ItemStack(ModBlocks.ARRI_ALEXA_65);
+        }
+    };
 
     /**
      * This is the instance of your mod as created by Forge. It will never be null.

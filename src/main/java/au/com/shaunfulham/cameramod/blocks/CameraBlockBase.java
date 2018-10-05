@@ -1,5 +1,6 @@
 package au.com.shaunfulham.cameramod.blocks;
 
+import au.com.shaunfulham.cameramod.Cameramod;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
@@ -13,6 +14,6 @@ public class CameraBlockBase extends Block
         super(Material.IRON);
         this.setUnlocalizedName(id);
         this.setRegistryName(id);
-        this.setCreativeTab(CreativeTabs.REDSTONE);
+        this.setCreativeTab(Cameramod.camera_tab);
     }
 }
