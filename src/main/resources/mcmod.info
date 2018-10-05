@@ -1,0 +1,20 @@
+[
+  {
+    "modid": "cameramod",
+    "name": "Camera Mod",
+    "description": "Adds in working cameras into Minecraft",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "url": "",
+    "updateUrl": "",
+    "authorList": [
+      "Shazer"
+    ],
+    "credits": "",
+    "logoFile": "",
+    "screenshots": [],
+    "dependencies": [
+      ""
+    ]
+  }
+]
