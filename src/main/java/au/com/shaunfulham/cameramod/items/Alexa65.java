@@ -1,6 +1,9 @@
 package au.com.shaunfulham.cameramod.items;
 
+import au.com.shaunfulham.cameramod.blocks.ArriAlexa65;
 import au.com.shaunfulham.cameramod.gui.CameraGui;
+import au.com.shaunfulham.cameramod.init.ModBlocks;
+import au.com.shaunfulham.cameramod.init.RegistrationHandler;
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.player.EntityPlayer;
@@ -24,6 +27,6 @@ public class Alexa65 extends ItemBlock
     public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn)
     {
         Minecraft.getMinecraft().displayGuiScreen(new CameraGui());
-        return null;
+        return new ActionResult<>(EnumActionResult.SUCCESS, new ItemStack(ModBlocks.ARRI_ALEXA_65, 0));
     }
 }
