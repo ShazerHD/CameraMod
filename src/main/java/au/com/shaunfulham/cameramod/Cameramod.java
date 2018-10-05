@@ -45,7 +45,7 @@ public class Cameramod
     @Mod.EventHandler
     public void postinit(FMLPostInitializationEvent event)
     {
-
+        proxy.postInit(event);
     }
 
 }
