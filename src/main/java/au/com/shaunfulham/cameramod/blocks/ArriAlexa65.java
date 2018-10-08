@@ -43,6 +43,7 @@ public class ArriAlexa65 extends CameraBlockBase
       return true;
     }
 
+
         public void mountCamera(World world, int x, int y, int z, int id, EntityPlayer player){
 
         if(player.getRidingEntity() != null && player.getRidingEntity() instanceof EntityAlexa65){

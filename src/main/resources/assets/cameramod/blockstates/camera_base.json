@@ -1,7 +1,9 @@
 {
     "variants": 
     {
-        "normal": { "model": "cameramod:block/camera_base" }
-
+        "facing=north": {"model": "cameramod:camera_base"},
+        "facing=east": {"model": "cameramod:camera_base", "y": 90},
+        "facing=south": {"model": "cameramod:camera_base", "y": 180},
+        "facing=west": {"model": "cameramod:camera_base", "y": 270}
     }
 }
