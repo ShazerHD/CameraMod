@@ -1,5 +1,6 @@
 package au.com.shaunfulham.cameramod.items;
 
+
 import au.com.shaunfulham.cameramod.gui.CameraGui;
 import com.mrcrayfish.obfuscate.Obfuscate;
 import com.mrcrayfish.obfuscate.client.event.ModelPlayerEvent;
@@ -17,19 +18,16 @@ import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-public class Alexa65 extends ItemBlock
-{
-    public Alexa65(Block block)
-    {
+public class Alexa65 extends ItemBlock {
+    public Alexa65(Block block) {
         super(block);
     }
 
     @Override
     public boolean isValidArmor(ItemStack stack, EntityEquipmentSlot armorType, Entity entity) {
-        if(armorType.getSlotIndex() == 2)
-        {
+        if (armorType.getSlotIndex() == 2) {
             return true;
         }
-        return false;
+        return true;
     }
 }
