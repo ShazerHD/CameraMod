@@ -1,9 +1,13 @@
 package au.com.shaunfulham.cameramod.items;
 
 import au.com.shaunfulham.cameramod.gui.CameraGui;
+import com.mrcrayfish.obfuscate.Obfuscate;
+import com.mrcrayfish.obfuscate.client.event.ModelPlayerEvent;
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ActionResult;
@@ -20,4 +24,12 @@ public class Alexa65 extends ItemBlock
         super(block);
     }
 
+    @Override
+    public boolean isValidArmor(ItemStack stack, EntityEquipmentSlot armorType, Entity entity) {
+        if(armorType.getSlotIndex() == 2)
+        {
+            return true;
+        }
+        return false;
+    }
 }
