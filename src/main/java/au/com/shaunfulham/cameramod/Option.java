@@ -1,7 +1,8 @@
 package au.com.shaunfulham.cameramod;
 
+import au.com.shaunfulham.cameramod.proxy.packets.PacketSUpdateSliderValue;
 import au.com.shaunfulham.cameramod.tileentity.TileEntityCamera;
-import javafx.scene.Camera;
+import net.minecraft.nbt.NBTTagCompound;
 import net.minecraftforge.fml.client.config.GuiSlider;
 
 
@@ -31,7 +32,7 @@ public class Option<T> {
     }
 
     /**
-     * Called when this option's button in {@link GuiCustomizeBlock} is pressed.
+     * Called when this option's button in {@link } is pressed.
      * Update the option's value here. <p>
      *
      * NOTE: This gets called on the server side, not on the client!
@@ -126,7 +127,7 @@ public class Option<T> {
     /**
      * @return If this option is some kind of number (integer, float, etc.),
      *         return the amount the number should increase/decrease every time
-     *         the option is toggled in {@link GuiCustomizeBlock}.
+     *         the option is toggled in {@link }.
      */
     public T getIncrement() {
         return increment;
@@ -213,7 +214,7 @@ public class Option<T> {
     /**
      * A subclass of {@link Option}, already setup to handle doubles.
      */
-    public static class OptionDouble extends Option<Double> implements net.minecraftforge.fml.client.config.GuiSlider.ISlider
+    public static class OptionDouble extends Option<Double> implements GuiSlider.ISlider
     {
         private boolean slider;
         private TileEntityCamera tileEntity;
@@ -277,6 +278,12 @@ public class Option<T> {
             Cameramod.network.sendToServer(new PacketSUpdateSliderValue(tileEntity.getPos(), id, getValue()));
         }
 
+
+
+        @Override
+        public void onChangeSliderValue(GuiSlider slider)
+        {
+        }
     }
 
     /**

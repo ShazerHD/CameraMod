@@ -1,6 +1,7 @@
 package au.com.shaunfulham.cameramod.proxy.packets;
 
 import au.com.shaunfulham.cameramod.BlockUtils;
+import au.com.shaunfulham.cameramod.WorldUtils;
 import au.com.shaunfulham.cameramod.blocks.ArriAlexa65;
 import io.netty.buffer.ByteBuf;
 import net.minecraft.entity.player.EntityPlayerMP;
@@ -53,7 +54,7 @@ public class PacketSMountCamera implements IMessage {
                 int id = message.id;
                 EntityPlayerMP player = context.getServerHandler().player;
 
-                if((BlockUtils.getBlock(getWorld(player), BlockUtils.toPos(x, y, z)) instanceof BlockSecurityCamera))
+                if((BlockUtils.getBlock(getWorld(player), BlockUtils.toPos(x, y, z)) instanceof ArriAlexa65))
                     ((ArriAlexa65) BlockUtils.getBlock(getWorld(player), x, y, z)).mountCamera(getWorld(player), x, y, z, id, player);
             }));
 

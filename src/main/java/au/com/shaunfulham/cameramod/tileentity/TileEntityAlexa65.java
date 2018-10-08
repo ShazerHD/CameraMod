@@ -39,9 +39,6 @@ public class TileEntityAlexa65 extends TileEntityCamera
             addToRotation = true;
     }
 
-
-
-    @Override
     public Option<?>[] customOptions() {
         return new Option[]{ rotationSpeedOption, shouldRotateOption, customRotationOption };
     }
@@ -51,6 +48,42 @@ public class TileEntityAlexa65 extends TileEntityCamera
     {
         super.onLoad();
         down = world.getBlockState(pos).getValue(ArriAlexa65.FACING) == EnumFacing.DOWN;
+    }
+
+    @Override
+    public int getSizeInventory()
+    {
+        return 0;
+    }
+
+    @Override
+    public boolean isEmpty()
+    {
+        return false;
+    }
+
+    @Override
+    public ItemStack getStackInSlot(int index)
+    {
+        return null;
+    }
+
+    @Override
+    public ItemStack decrStackSize(int index, int count)
+    {
+        return null;
+    }
+
+    @Override
+    public ItemStack removeStackFromSlot(int index)
+    {
+        return null;
+    }
+
+    @Override
+    public void setInventorySlotContents(int index, ItemStack stack)
+    {
+
     }
 
     @Override
@@ -69,5 +102,29 @@ public class TileEntityAlexa65 extends TileEntityCamera
     public void closeInventory(EntityPlayer player)
     {
 
+    }
+
+    @Override
+    public boolean isItemValidForSlot(int index, ItemStack stack)
+    {
+        return false;
+    }
+
+    @Override
+    public void clear()
+    {
+
+    }
+
+    @Override
+    public String getName()
+    {
+        return null;
+    }
+
+    @Override
+    public boolean hasCustomName()
+    {
+        return false;
     }
 }

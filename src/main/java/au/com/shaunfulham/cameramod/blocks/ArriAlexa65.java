@@ -3,6 +3,7 @@ package au.com.shaunfulham.cameramod.blocks;
 
 import au.com.shaunfulham.cameramod.BlockUtils;
 import au.com.shaunfulham.cameramod.Cameramod;
+import au.com.shaunfulham.cameramod.WorldUtils;
 import au.com.shaunfulham.cameramod.gui.CameraGui;
 import au.com.shaunfulham.cameramod.misc.CameraView;
 import au.com.shaunfulham.cameramod.proxy.packets.PacketSMountCamera;
@@ -60,8 +61,6 @@ public class ArriAlexa65 extends CameraBlockBase
                 if(((EntityLiving)e).getAttackTarget() == player)
                     ((EntityLiving)e).setAttackTarget(null);
     }
-
-
 
 
 }

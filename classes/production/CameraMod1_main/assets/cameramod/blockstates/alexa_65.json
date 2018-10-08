@@ -3,21 +3,10 @@
   "defaults": {},
   "variants": {
     "type": {
-      "normal": {"model": "cameramod:alexa_65"}
-    },
-    "facing": {
-      "north": {
-        "y": 0
-      },
-      "east": {
-        "y": 90
-      },
-      "south": {
-        "y": 180
-      },
-      "west": {
-        "y": 270
-      }
+      "facing=north": {"model": "cameramod:alexa_65"},
+      "facing=east": {"model": "cameramod:alexa_65", "y": 90},
+      "facing=south": {"model": "cameramod:alexa_65", "y": 180},
+      "facing=west": {"model": "cameramod:alexa_65", "y": 270}
     }
   }
 }

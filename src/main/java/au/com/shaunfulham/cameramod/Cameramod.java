@@ -3,7 +3,6 @@ package au.com.shaunfulham.cameramod;
 import au.com.shaunfulham.cameramod.blocks.ArriAlexa65;
 import au.com.shaunfulham.cameramod.init.ModBlocks;
 import au.com.shaunfulham.cameramod.proxy.CommonProxy;
-import com.mrcrayfish.obfuscate.client.event.ModelPlayerEvent;
 import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
