@@ -3,7 +3,6 @@ package au.com.shaunfulham.cameramod;
 import au.com.shaunfulham.cameramod.blocks.ArriAlexa65;
 import au.com.shaunfulham.cameramod.init.ModBlocks;
 import au.com.shaunfulham.cameramod.proxy.CommonProxy;
-import com.mrcrayfish.obfuscate.client.event.ModelPlayerEvent;
 import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
@@ -14,6 +13,8 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.network.NetworkRegistry;
+import net.minecraftforge.fml.common.network.simpleimpl.SimpleNetworkWrapper;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.event.RegistryEvent;
 
@@ -37,10 +38,13 @@ public class Cameramod
     @SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.COMMON_PROXY_CLASS)
     public static CommonProxy proxy;
 
+    public static SimpleNetworkWrapper network;
+
 
     @Mod.EventHandler
     public void preinit(FMLPreInitializationEvent event)
     {
+        Cameramod.network = NetworkRegistry.INSTANCE.newSimpleChannel(Reference.MOD_ID);
         proxy.preInit(event);
     }
 

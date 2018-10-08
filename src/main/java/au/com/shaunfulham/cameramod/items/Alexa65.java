@@ -2,8 +2,6 @@ package au.com.shaunfulham.cameramod.items;
 
 
 import au.com.shaunfulham.cameramod.gui.CameraGui;
-import com.mrcrayfish.obfuscate.Obfuscate;
-import com.mrcrayfish.obfuscate.client.event.ModelPlayerEvent;
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.Entity;
