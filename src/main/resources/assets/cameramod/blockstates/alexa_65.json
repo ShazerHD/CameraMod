@@ -1,7 +1,23 @@
 {
-  "variants":
-  {
-    "normal": { "model": "cameramod:alexa_65" }
-
+  "forge_marker": 1,
+  "defaults": {},
+  "variants": {
+    "type": {
+      "normal": {"model": "cameramod:alexa_65"}
+    },
+    "facing": {
+      "north": {
+        "y": 0
+      },
+      "east": {
+        "y": 90
+      },
+      "south": {
+        "y": 180
+      },
+      "west": {
+        "y": 270
+      }
+    }
   }
 }
