@@ -60,5 +60,15 @@ public class CameraBlockBase extends BlockHorizontal
         return state.getValue(FACING).getIndex();
     }
 
+    @Override
+    public boolean isOpaqueCube(IBlockState state)
+    {
+        return false;
+    }
 
+    @Override
+    public boolean isFullCube(IBlockState state)
+    {
+        return false;
+    }
 }

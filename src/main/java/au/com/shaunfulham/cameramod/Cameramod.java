@@ -1,7 +1,10 @@
 package au.com.shaunfulham.cameramod;
 
 import au.com.shaunfulham.cameramod.blocks.ArriAlexa65;
+import au.com.shaunfulham.cameramod.client.CameraRenderRegistry;
+import au.com.shaunfulham.cameramod.client.RenderArriAlexa65;
 import au.com.shaunfulham.cameramod.init.ModBlocks;
+import au.com.shaunfulham.cameramod.items.Alexa65;
 import au.com.shaunfulham.cameramod.proxy.CommonProxy;
 import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;

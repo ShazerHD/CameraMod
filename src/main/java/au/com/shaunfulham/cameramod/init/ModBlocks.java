@@ -2,6 +2,7 @@ package au.com.shaunfulham.cameramod.init;
 
 import au.com.shaunfulham.cameramod.blocks.ArriAlexa65;
 import au.com.shaunfulham.cameramod.blocks.CameraBaseBlock;
+import au.com.shaunfulham.cameramod.blocks.CameraBlockBase;
 import au.com.shaunfulham.cameramod.items.Alexa65;
 import au.com.shaunfulham.cameramod.items.CameraBase;
 import net.minecraft.block.Block;
@@ -11,7 +12,7 @@ public class ModBlocks
 {
 
     public static final Block CAMERA_BASE;
-    public static final Block ARRI_ALEXA_65;
+    public static final CameraBlockBase ARRI_ALEXA_65;
 
     static
     {

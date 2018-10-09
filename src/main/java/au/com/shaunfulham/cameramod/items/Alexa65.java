@@ -1,6 +1,7 @@
 package au.com.shaunfulham.cameramod.items;
 
 
+import au.com.shaunfulham.cameramod.blocks.CameraBlockBase;
 import au.com.shaunfulham.cameramod.gui.CameraGui;
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
@@ -16,8 +17,8 @@ import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-public class Alexa65 extends ItemBlock {
-    public Alexa65(Block block) {
+public class Alexa65 extends ItemCamera {
+    public Alexa65(CameraBlockBase block) {
         super(block);
     }
 
@@ -26,6 +27,6 @@ public class Alexa65 extends ItemBlock {
         if (armorType.getSlotIndex() == 2) {
             return true;
         }
-        return true;
+        return false;
     }
 }
