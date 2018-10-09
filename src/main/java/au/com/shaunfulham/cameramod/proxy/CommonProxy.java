@@ -9,10 +9,10 @@ public class CommonProxy
 {
     public void preInit(FMLPreInitializationEvent event)
     {
-        RegistrationHandler.init();
+
     }
 
-    public void init(FMLInitializationEvent event) {}
+    public void init(FMLInitializationEvent event) {RegistrationHandler.init();}
 
     public void postInit(FMLPostInitializationEvent event) {}
 }

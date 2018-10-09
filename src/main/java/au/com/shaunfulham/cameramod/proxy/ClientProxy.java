@@ -15,18 +15,9 @@ public class ClientProxy extends CommonProxy
 
     public void preInit(FMLPreInitializationEvent event)
     {
-        registerLandVehicleRenderingHandler(Alexa65.class, new RenderArriAlexa65());
+       
     }
 
-    public void init(FMLInitializationEvent event)
-    {
-
-    }
-
-    public void postInit(FMLPostInitializationEvent event)
-    {
-        
-    }
 
     private <T extends ItemCamera> void registerLandVehicleRenderingHandler(Class<T> clazz, AbstractRenderCamera<T> render)
     {
