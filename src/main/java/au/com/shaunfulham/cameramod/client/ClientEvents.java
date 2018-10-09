@@ -38,7 +38,10 @@ public class ClientEvents
         if(heldItem instanceof Alexa65)
         {
             ItemCamera vehicle = (ItemCamera) heldItem;
+            model.bipedRightArm.rotateAngleX = (float) Math.toRadians(-90F);
             model.bipedRightArm.rotateAngleY = (float) Math.toRadians(10F);
+            model.bipedLeftArm.rotateAngleX = (float) Math.toRadians(-90F);
+            model.bipedLeftArm.rotateAngleY = (float) Math.toRadians(45F);
 
             return;
         } else
