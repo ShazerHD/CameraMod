@@ -12,7 +12,7 @@ public class CommonProxy
 
     }
 
-    public void init(FMLInitializationEvent event) {RegistrationHandler.init();}
+    public void init(FMLInitializationEvent event) {}
 
     public void postInit(FMLPostInitializationEvent event) {}
 }
