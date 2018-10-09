@@ -39,10 +39,11 @@ public class ClientEvents
         {
             ItemCamera vehicle = (ItemCamera) heldItem;
             model.bipedRightArm.rotateAngleX = (float) Math.toRadians(-90F);
-            model.bipedRightArm.rotateAngleY = (float) Math.toRadians(10F);
+            model.bipedRightArm.rotateAngleY = (float) Math.toRadians(20F);
             model.bipedLeftArm.rotateAngleX = (float) Math.toRadians(-90F);
-            model.bipedLeftArm.rotateAngleY = (float) Math.toRadians(45F);
-
+            model.bipedLeftArm.rotateAngleY = (float) Math.toRadians(55F);
+            model.bipedLeftArm.offsetX = (float) Math.toRadians(-10F);
+            model.bipedLeftArm.offsetZ = (float) Math.toRadians(-10F);
             return;
         } else
         {
